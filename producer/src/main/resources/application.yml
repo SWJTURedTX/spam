@@ -1,0 +1,10 @@
+server:
+  port: 8761 #8761 8762
+
+spring:
+  application:
+    name: producer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 10.1.144.111:8848

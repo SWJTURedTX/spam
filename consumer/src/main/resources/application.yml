@@ -1,0 +1,17 @@
+server:
+  port: 8763
+
+spring:
+  application:
+    name: consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 10.1.144.111:8848
+    sentinel:
+      transport:
+        port: 18763
+        dashboard: 10.1.144.111:8748
+feign:
+  sentinel:
+    enabled: true
